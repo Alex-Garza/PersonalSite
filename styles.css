@@ -1,0 +1,101 @@
+/*master styles*/
+.body {
+    margin: 0px;
+}
+
+/*having the container use grid and the colums using 
+1 fractional unit, breaks everything into columns */
+.container {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+/* nav styles */
+.nav-wrapper {
+    display: flex;
+    justify-content: space-between;
+    padding: 38px;
+}
+
+.left-side {
+    display: flex;
+}
+
+.nav-wrapper > .left-side > div {
+    margin-right: 20px;
+    font-size: 0.9rem;
+}
+
+.nav-link-wrapper {
+    height: 22px;
+    border-bottom: 1px solid transparent;
+    transition: border-bottom 0.5s;
+}
+
+.nav-link-wrapper a {
+    color: purple;
+    text-decoration: none; 
+    transition: color 0.5s;
+}
+
+/* used to tell css to use psudeo states when hover occurs*/
+.nav-link-wrapper:hover {
+    border-bottom: 1px solid MediumSlateBlue;
+}
+.nav-link-wrapper a:hover {
+    color: MediumSlateBlue;
+}
+
+/* Portfolio styles */
+
+.portfolio-items-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr; /* this aligns each item to only have 3 per line */
+}
+
+.portfolio-item-wrapper {
+    position: relative;
+}
+.portfolio-img-background {
+    height: 350px;
+    width: 100%;
+    background-size: cover; /* crops images so they all sit nicely next to each other */
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.img-text-wrapper {
+    position: absolute; /* forcing the element to be  positioned in the top*/
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    text-align: center;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+.logo-wrapper img{
+    width: 85%;
+    margin-bottom: 20px;
+}
+
+.img-text-wrapper .subtitle {
+    transition: 1s;
+    font-weight: 600;
+    color: transparent;
+}
+
+/*needs to be more specific with selector */
+.img-text-wrapper:hover .subtitle {
+    font-weight: 600;
+    color: mediumpurple;
+}
+
+/* used to darken the image when it is hovered on */
+.img-darken {
+    transition: 1s;
+    filter: brightness(10%);
+}
