@@ -14,7 +14,9 @@
 .nav-wrapper {
     display: flex;
     justify-content: space-between;
-    padding: 38px;
+    word-spacing: 10px;
+    padding: 20px;
+    background-color: #D0DAEE;
 }
 
 .left-side {
@@ -40,9 +42,73 @@
 
 /* used to tell css to use psudeo states when hover occurs*/
 .nav-link-wrapper:hover {
-    border-bottom: 1px solid red;
+    border-bottom: 1px solid MediumSlateBlue;
 }
 .nav-link-wrapper a:hover {
+    color: MediumSlateBlue;
+}
+
+/* here is the summary part of my website*/
+.summary {
+    background-color: blue;
+    min-height: 320px;
+    position: relative;
+}
+.summary-everything {
+    background-color: rgb(47, 48, 97);
+    display: flex;
+    -moz-box-pack: center;
+    justify-content: center;
+    -moz-box-align: center;
+    align-items: center;
+    position: absolute;
+    z-index: 2;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+}
+.summary-content {
+    color: white;
+    height: 200px;
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+}
+.summary-intro {
+    height: 70%;
+    display: flex;
+    flex-direction: column;
+}
+.summary-title {
+    align-self: center;
+    margin: 0px;
+    font-size: 45px;
+}
+.summary-location {
+    margin: 0px;
+    align-self: center;
+    font-size: 20px;
+}
+.links {
+    display: flex;
+    justify-content: space-around;
+
+}
+.summary-links {
+    height: 22px;
+    display: flex;
+    border-bottom: 1px solid transparent;
+    transition: border-bottom 0.5s;
+}
+.summary-links a {
+    color: white;
+    text-decoration: none; 
+    transition: color 0.5s;
+}
+.summary-links:hover {
+    border-bottom: 1px solid MediumSlateBlue;
+}
+.summary-links a:hover {
     color: MediumSlateBlue;
 }
 
@@ -98,15 +164,32 @@
     filter: brightness(10%);
 }
 
-.foot {
-    font-size: 1.5rem;
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    height: 2.5rem;            /* Footer height */
+/* footer section */
+.footer {
+    position:fixed;
+    bottom:0;
+    left:0;
+    width:100%;
+    height: 60px;
+    background-color: #D0DAEE;
+}
+/* left side of footer */
+.footer-text-left {
+    margin-top:15px;
+    font-size:25px;
+    padding-left:40px;
+    float:left;
+    word-spacing:20px;
+}
+/* underlines the icons when hovered on*/
+a.icon:hover {
+    border-bottom: 1px solid MediumSlateBlue;
+    font-size:22px;
 }
 
-.footer-row {
-    text-align: right;
-    text-indent: 5px;
+/* right side of footer*/
+.footer-content-right {
+    padding-right:40px;
+    margin-top:5px;
+    float:right;
 }
