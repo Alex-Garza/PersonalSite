@@ -23,7 +23,7 @@
 
 .nav-wrapper > .left-side > div {
     margin-right: 20px;
-    font-size: 0.9rem;
+    font-size: 1.2rem;
 }
 
 .nav-link-wrapper {
@@ -33,21 +33,20 @@
 }
 
 .nav-link-wrapper a {
-    color: purple;
+    color: blue;
     text-decoration: none; 
     transition: color 0.5s;
 }
 
 /* used to tell css to use psudeo states when hover occurs*/
 .nav-link-wrapper:hover {
-    border-bottom: 1px solid MediumSlateBlue;
+    border-bottom: 1px solid red;
 }
 .nav-link-wrapper a:hover {
     color: MediumSlateBlue;
 }
 
 /* Portfolio styles */
-
 .portfolio-items-wrapper {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr; /* this aligns each item to only have 3 per line */
@@ -91,11 +90,23 @@
 /*needs to be more specific with selector */
 .img-text-wrapper:hover .subtitle {
     font-weight: 600;
-    color: mediumpurple;
+    color: blue;
 }
-
 /* used to darken the image when it is hovered on */
 .img-darken {
     transition: 1s;
     filter: brightness(10%);
+}
+
+.foot {
+    font-size: 1.5rem;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 2.5rem;            /* Footer height */
+}
+
+.footer-row {
+    text-align: right;
+    text-indent: 5px;
 }
