@@ -168,6 +168,38 @@
     filter: brightness(10%);
 }
 
+/* skills section */
+.skills {
+    box-sizing: border-box;
+    padding: 50px 25px;
+    text-align: center;
+    color: white;
+    background-color: rgb(48, 48, 128)
+}
+.heading {
+    position: relative;
+    display: inline-block;
+    font-size: 2em;
+    font-weight: 300;
+}
+.skills ul {
+    display: block;
+    margin: 0 auto;
+    padding: 20px;
+    max-width: 800px;
+}
+.skills li {
+    display: inline-block;
+    margin: 7px;
+    padding: 5px 20px;
+    color: #374054;
+    background: #e4e4ea;
+    list-style: none;
+    cursor: default;
+    font-size: 1.2em;
+}
+
+
 /* footer section */
 .footer {
     position:fixed;
@@ -193,10 +225,10 @@ a.icon:hover {
     border-bottom: 1px solid MediumSlateBlue;
     font-size:22px;
 }
-
 /* right side of footer*/
 .footer-content-right {
-    padding-right:40px;
+    font-size:19px;
+    padding-right:35px;
     margin-top:20px;
     float:right;
 }
