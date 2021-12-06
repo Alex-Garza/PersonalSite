@@ -144,9 +144,11 @@
     padding-right: 100px;
 }
 
-.logo-wrapper img{
+.logo-wrapper {
+    color: gray;
+    font-size: 30px;
+    padding: 30px;
     width: 85%;
-    margin-bottom: 20px;
 }
 
 .img-text-wrapper .subtitle {
