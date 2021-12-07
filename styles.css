@@ -229,3 +229,21 @@ a.icon:hover {
     margin-top:20px;
     float:right;
 }
+
+/* about me*/
+.two-column-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+  
+.profile-image-wrapper img {
+    width: 100%;
+}
+  
+.profile-content-wrapper {
+    padding: 30px;
+}
+  
+.profile-content-wrapper h1 {
+    color: white;
+}
