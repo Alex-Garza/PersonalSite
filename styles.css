@@ -51,7 +51,7 @@
 
 /* here is the summary part of my website*/
 .summary {
-    background-color: blue;
+    background-color: rgb(48, 48, 128);
     min-height: 320px;
     position: relative;
 }
@@ -174,7 +174,7 @@
     padding: 50px 25px;
     text-align: center;
     color: white;
-    background-color: rgb(48, 48, 128)
+    background-color: rgb(48, 48, 128);
 }
 .heading {
     position: relative;
