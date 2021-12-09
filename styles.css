@@ -138,8 +138,7 @@
     align-items: center;
     height: 100%;
     text-align: center;
-    padding-left: 35px;
-    padding-right: 35px;
+    width: 100%;
 }
 
 .logo-wrapper {
@@ -217,12 +216,12 @@
 .icon {
     color: Dodgerblue;
 }
-/* underlines the icons when hovered on*/
+/* underlines the icons when hovered on */
 a.icon:hover {
     border-bottom: 1px solid MediumSlateBlue;
     font-size:22px;
 }
-/* right side of footer*/
+/* right side of footer */
 .footer-content-right {
     font-size:19px;
     padding-right:35px;
@@ -230,7 +229,7 @@ a.icon:hover {
     float:right;
 }
 
-/* about me*/
+/* about me page */
 .two-column-wrapper {
     display: grid;
     grid-template-columns: 1fr 1fr;
