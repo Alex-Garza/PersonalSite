@@ -246,3 +246,9 @@ a.icon:hover {
 .profile-content-wrapper h1 {
     color: white;
 }
+
+.about-summary {
+    color: lightgray;
+    font-size: 18px;
+    text-align:justify;
+}
